@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BURRITO ZIP</title>
-    <link rel = "stylesheet" href="css/order.css">
-    <link rel="stylesheet" href="css/header&footer.css">
-  </head>
-  <body>
-    <header>    <!-- Logo Section -->
-        <a href="main.html"> <!--메인페이지 링크 걸어주시면됩니다-->
-            <div class="logo-container">
-                <img src="로고/BURRITO ZIP.png" alt="BURRITO ZIP Logo">
-            </div>
-        </a>
-    
-        <!-- Navigation Bar -->
-        <nav>
-            <a href="menu.html">메뉴</a> <!--메뉴 링크 걸어주시면됩니다-->
-            <a href="about.html" class="nav-title">BURRITO <span>ZIP</span></a>
-            <a href="order_set.html">주문</a> <!--주문 링크 걸어주시면됩니다-->
-            <a href="contact.html">고객문의</a> <!--고객문의 링크 걸어주시면됩니다-->
-        </nav>
-    </header>
-        <!--메뉴소개-->
-        <div id="menuintro"><b>세트 선택</b></div>
-        <div class="widget-section">
-            <div class="widget-container">
-                <!-- 1번 슬롯 (왼쪽) -->
-                <div class="widget-slot">
+    <head>
+        <title>BURRITO ZIP</title>
+        <link rel = "stylesheet" href="css/order.css">
+        <link rel="stylesheet" href="css/header&footer.css">
+    </head>
+    <body>
+        <header>    <!-- Logo Section -->
+            <a href="main.html"> <!--메인페이지 링크 걸어주시면됩니다-->
+                <div class="logo-container">
+                    <img src="로고/BURRITO ZIP.png" alt="BURRITO ZIP Logo">
                 </div>
-                <!-- 2번 슬롯 (중앙) -->
-                <div class="widget-slot"></div>
-                <!-- 3번 슬롯 (오른쪽) -->
-                <div class="widget-slot"></div>
+            </a>
+        
+            <!-- Navigation Bar -->
+            <nav>
+                <a href="menu.html">메뉴</a> <!--메뉴 링크 걸어주시면됩니다-->
+                <a href="about.html" class="nav-title">BURRITO <span>ZIP</span></a>
+                <a href="order_set.html">주문</a> <!--주문 링크 걸어주시면됩니다-->
+                <a href="contact.html">고객문의</a> <!--고객문의 링크 걸어주시면됩니다-->
+            </nav>
+        </header>
+        <div class = "order-section">
+            <!--메뉴소개-->
+            <div id="menuintro"><b>세트 선택</b></div>
+            <div class="widget-section">
+                <div class="widget-container">
+                    <!-- 1번 슬롯 (왼쪽) -->
+                    <div class="widget-slot">
+                    </div>
+                    <!-- 2번 슬롯 (중앙) -->
+                    <div class="widget-slot"></div>
+                    <!-- 3번 슬롯 (오른쪽) -->
+                    <div class="widget-slot"></div>
+                </div>
             </div>
-        </div>
-        <div id="menu">
-            <div id="setmenu"><!--세트메뉴 -->
-                <div class="menu-container">
-                    <div><!--단품메뉴-->
-                        <img src="메뉴/단품.png">
-                        <p class="menuname">단품 부리또</p>
-                        <div class="price">
-                            <p>3,500</p>
+            <div id="menu">
+                <div id="setmenu"><!--세트메뉴 -->
+                    <div class="menu-container">
+                        <div><!--단품메뉴-->
+                            <img src="메뉴/단품.png">
+                            <p class="menuname">단품 부리또</p>
+                            <div class="price">
+                                <p>3,500</p>
+                            </div>
+                            <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
                         </div>
-                        <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
-                    </div>
-                    <div><!--음료 세트-->
-                        <img src="메뉴/음료세트.png">
-                        <p class="menuname">음료세트</p>
-                        <div class="price">
-                            <p>4,200</p>
+                        <div><!--음료 세트-->
+                            <img src="메뉴/음료세트.png">
+                            <p class="menuname">음료세트</p>
+                            <div class="price">
+                                <p>4,200</p>
+                            </div>
+                            <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
                         </div>
-                        <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
-                    </div>
-                    <div><!--튀김세트-->
-                        <img src="메뉴/음료 후라이 세트.png">
-                        <p class="menuname">튀김세트
-                        </p>
-                        <div class="price">
-                            <p>6,000</p>
+                        <div><!--튀김세트-->
+                            <img src="메뉴/음료 후라이 세트.png">
+                            <p class="menuname">튀김세트
+                            </p>
+                            <div class="price">
+                                <p>6,000</p>
+                            </div>
+                            <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
                         </div>
-                        <button class = "select" type = "button" onclick="location.href='order_meat.html'">선택하기</button>
                     </div>
                 </div>
             </div>

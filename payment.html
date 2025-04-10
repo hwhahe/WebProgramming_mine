@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BURRITO ZIP</title>
-    <link rel = "stylesheet" href="css/payment.css">
-    <link rel="stylesheet" href="css/header&footer.css">
-  </head>
-  <body>
-    <header>    <!-- Logo Section -->
-        <a href="main.html"> <!--메인페이지 링크 걸어주시면됩니다-->
-            <div class="logo-container">
-                <img src="로고/BURRITO ZIP.png" alt="BURRITO ZIP Logo">
+    <head>
+        <title>BURRITO ZIP</title>
+        <link rel = "stylesheet" href="css/payment.css">
+        <link rel="stylesheet" href="css/header&footer.css">
+    </head>
+    <body>
+        <header>    <!-- Logo Section -->
+            <a href="main.html"> <!--메인페이지 링크 걸어주시면됩니다-->
+                <div class="logo-container">
+                    <img src="로고/BURRITO ZIP.png" alt="BURRITO ZIP Logo">
+                </div>
+            </a>
+        
+            <!-- Navigation Bar -->
+            <nav>
+                <a href="menu.html">메뉴</a> <!--메뉴 링크 걸어주시면됩니다-->
+                <a href="about.html" class="nav-title">BURRITO <span>ZIP</span></a>
+                <a href="order_set.html">주문</a> <!--주문 링크 걸어주시면됩니다-->
+                <a href="contact.html">고객문의</a> <!--고객문의 링크 걸어주시면됩니다-->
+            </nav>
+        </header>
+        <div class = "payment-section">
+            <!--메뉴소개-->
+            <div id="payintro">
+            <b>결제</b>          
             </div>
-        </a>
-    
-        <!-- Navigation Bar -->
-        <nav>
-            <a href="menu.html">메뉴</a> <!--메뉴 링크 걸어주시면됩니다-->
-            <a href="about.html" class="nav-title">BURRITO <span>ZIP</span></a>
-            <a href="order_set.html">주문</a> <!--주문 링크 걸어주시면됩니다-->
-            <a href="contact.html">고객문의</a> <!--고객문의 링크 걸어주시면됩니다-->
-        </nav>
-    </header>
-        <!--메뉴소개-->
-        <div id="payintro">
-          <b>결제</b>          
-        </div>
-        <div class="widget-section">
-            <div class="widget-container">
-                <!-- 1번 슬롯 (왼쪽) -->
-                <div class="widget-slot">
-                    <div class="widget">
-                        <button class = "home" type="button" onclick="location.href = 'order_set.html'">처음으로</button>
+            <div class="widget-section">
+                <div class="widget-container">
+                    <!-- 1번 슬롯 (왼쪽) -->
+                    <div class="widget-slot">
+                        <div class="widget">
+                            <button class = "home" type="button" onclick="location.href = 'order_set.html'">처음으로</button>
+                        </div>
                     </div>
+                    <!-- 2번 슬롯 (중앙) -->
+                    <div class="widget-slot"></div>
+                    <!-- 3번 슬롯 (오른쪽) -->
+                    <div class="widget-slot"></div>
                 </div>
-                <!-- 2번 슬롯 (중앙) -->
-                <div class="widget-slot"></div>
-                <!-- 3번 슬롯 (오른쪽) -->
-                <div class="widget-slot"></div>
             </div>
-        </div>
-        <div id="payment-container">
-            <div id = "payment">
-                <img src="메뉴/음료세트.png">
-                <p class="menuname">음료세트 X 닭고기 X 양파튀김</p>
-                <div class="price">
-                    <p>6,200원</p>
+            <div id="payment-container">
+                <div id = "payment">
+                    <img src="메뉴/음료세트.png">
+                    <p class="menuname">음료세트 X 닭고기 X 양파튀김</p>
+                    <div class="price">
+                        <p>6,200원</p>
+                    </div>
+                    <button class = "select" type = "button" onclick="location.href='main.html'">결제하기</button>
                 </div>
-                <button class = "select" type = "button" onclick="location.href='main.html'">결제하기</button>
             </div>
         </div>
         <footer>

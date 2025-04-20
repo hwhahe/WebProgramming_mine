@@ -50,3 +50,64 @@
 .main_text button:hover {
   background-color: black;
 }
+
+/*호버 속성*/
+.hover-slider-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-target {
+  border-radius: 5px;
+  background-color: white;
+  color: #000;
+  margin-left: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.hover-slider {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  margin-left: 30px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-slider img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hover-slider img.active {
+  display: block;
+}
+
+.hover-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.6);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 10;
+}
+
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
+.hover-slider-wrapper:hover .hover-slider {
+  display: flex;
+}
